@@ -21,6 +21,10 @@
   };
 </script>
 
+<svelte:head>
+  <title>all cards</title>
+</svelte:head>
+
 <main class="container">
   <div class="columns is-multiline">
     {#each $todos as todo (todo.id)}
@@ -29,7 +33,7 @@
           class="card"
           in:scale={{ amount: 50, duration: 1000 }}
           out:slide={{ amount: 50, duration: 1000, easing: expoInOut }}
-          on:outroend={() => console.log("deleted")}
+          on:outroend={() => console.log("outroend")}
         >
           <header class="card-header">
             <button

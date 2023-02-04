@@ -8,7 +8,7 @@
   }
 </script>
 
-<div class="task" class:done>
+<div class="task box-border" class:done>
   <h1 class="text-input">{title}: {content}</h1>
   <input
     type="checkbox"
@@ -22,6 +22,7 @@
   .task.done {
     background-color: lightgreen;
     text-decoration: line-through;
+    border-radius: 0.25rem;
     transition: 0.3s;
   }
 

@@ -22,9 +22,21 @@
   }
 </script>
 
+<svelte:head>
+  <title>done cards</title>
+</svelte:head>
+
 <div id="table" class="is-flex is-justify-content-center">
   <div transition:blur={{ amount: 25, delay: 500 }}>
-    <input type="range" name="" id="" bind:value={toDo} max={$todos.length} />
+    <input
+      type="range"
+      class="slider is-fullwidth is-info"
+      name=""
+      id=""
+      bind:value={toDo}
+      max={$todos.length}
+    />
+
     <div class="box">
       {#each toDosSorted.slice(0, toDo) as todo}
         <div transition:slide class="table">

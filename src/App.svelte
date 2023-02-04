@@ -18,7 +18,7 @@
 </script>
 
 <Navbar>
-  TODO-Lists: {tasksDone}/{tasksToDo}
+  TODOs: {tasksDone}/{tasksToDo}
 </Navbar>
 
 <Router
@@ -30,5 +30,5 @@
 />
 
 <svelte:head>
-  <title>App</title>
+  <title>todo app</title>
 </svelte:head>
