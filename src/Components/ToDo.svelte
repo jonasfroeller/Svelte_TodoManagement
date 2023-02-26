@@ -72,7 +72,15 @@
         </div>
       </div>
     {:else}
-      <h1 class="title is-4 mt-4">Keine Aufgaben erstellt.</h1>
+      <div class="box">
+        <h1 class="title is-4 mt-4">No tasks created yet!</h1>
+      </div>
     {/each}
   </div>
 </main>
+
+<style>
+  .container {
+    padding: 2rem;
+  }
+</style>
